@@ -5,11 +5,12 @@ body {
 .list-container {
   display: grid;
   grid-template-columns: 3fr 9fr;
+  gap: 50px;
 }
 aside {
   background-color: white;
   padding: 30px 20px;
-  width: 250px;
+  /* width: 250px; */
   border-radius: 10px;
 }
 .list {
@@ -18,11 +19,16 @@ aside {
   width: 250px;
   justify-content: space-between;
 }
-#list-id {
+.list:hover {
   background-color: rgb(230, 228, 228);
   padding: 5px;
   border-radius: 20px;
 }
+/* #list-id {
+  background-color: rgb(230, 228, 228);
+  padding: 5px;
+  border-radius: 20px;
+} */
 .svj-container {
   display: flex;
   /* width: 80px; */
@@ -151,4 +157,11 @@ main {
   padding: 12px 10px;
   border-radius: 10px;
   margin-left: 10px;
+}
+@media only screen and (max-width: 950px) {
+  .list-container {
+    /* display: flex;
+    flex-direction: column; */
+    grid-template-columns: 6fr;
+  }
 }
