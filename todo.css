@@ -1,0 +1,154 @@
+body {
+  font-family: sans-serif;
+  background-color: rgb(230, 228, 228);
+}
+.list-container {
+  display: grid;
+  grid-template-columns: 3fr 9fr;
+}
+aside {
+  background-color: white;
+  padding: 30px 20px;
+  width: 250px;
+  border-radius: 10px;
+}
+.list {
+  display: flex;
+  align-items: center;
+  width: 250px;
+  justify-content: space-between;
+}
+#list-id {
+  background-color: rgb(230, 228, 228);
+  padding: 5px;
+  border-radius: 20px;
+}
+.svj-container {
+  display: flex;
+  /* width: 80px; */
+  justify-content: space-between;
+  align-items: center;
+}
+.p-aside {
+  margin-left: 10px;
+  font-size: 0.8rem;
+}
+.nummbers-aside {
+  font-size: 0.8rem;
+}
+.grid-container-section {
+  margin-bottom: 20px;
+}
+.grid-container {
+  width: 250px;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* gap: 20px; */
+  /* justify-content: space-between; */
+  /* width: 300px; */
+}
+.grid {
+  height: 120px;
+  /* width: 100px; */
+  background-color: rgb(230, 228, 228);
+  /* border: 1px solid gray; */
+  border-radius: 10px;
+}
+.h2-group {
+  font-size: 0.8rem;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.ph2-group {
+  font-size: 0.7rem;
+  color: rgb(190, 188, 188);
+}
+.header-main {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 900px;
+}
+main {
+  padding-top: 30px;
+}
+.h1-main {
+  /* font-size: 0.8rem; */
+}
+.p-main {
+  color: grey;
+  font: 1.5rem;
+}
+.svj-main-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: 100px;
+  border-radius: 10px;
+}
+.svj-main-txt {
+  padding: 0;
+  margin: 0;
+}
+.svj-main-container-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* padding: 10px; */
+}
+.svj-main-container-2 {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.todo-list-container {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+.todo-list {
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 10px;
+  /* width: 880px; */
+}
+.svj-todo-container {
+  display: flex;
+  align-items: center;
+}
+.p-main2 {
+  font-size: 1rem;
+  margin-left: 20px;
+}
+.time-container {
+  display: flex;
+  align-items: center;
+}
+.p-time-container {
+  display: flex;
+  align-items: center;
+  background-color: rgb(225, 222, 222);
+  padding: 0 10px;
+  border-radius: 10px;
+}
+.p-time {
+  color: rgb(140, 140, 140);
+  margin-left: 5px;
+}
+.dot-svj-container {
+  background-color: rgb(225, 222, 222);
+  padding: 12px 10px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
