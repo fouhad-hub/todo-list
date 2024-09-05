@@ -164,4 +164,19 @@ main {
     flex-direction: column; */
     grid-template-columns: 6fr;
   }
+  .list {
+    width: 100%;
+  }
+  .grid-container {
+    width: 100%;
+  }
+  .grid {
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .grid {
+    height: 200px;
+  }
 }
