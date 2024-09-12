@@ -8,7 +8,48 @@
   </head>
   <body>
     <div class="list-container">
-      <aside>
+      <input type="checkbox" id="check-sidebar" />
+      <label for="check-sidebar" id="label-sidebar">
+        <div id="btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-menu-2"
+            width="34"
+            height="34"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#2c3e50"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 6l16 0" />
+            <path d="M4 12l16 0" />
+            <path d="M4 18l16 0" />
+          </svg>
+        </div>
+        <div id="cancel">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-x"
+            width="34"
+            height="34"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#2c3e50"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M18 6l-12 12" />
+            <path d="M6 6l12 12" />
+          </svg>
+        </div>
+      </label>
+
+      <aside class="sidebar">
         <h1 class="h1-aside">Private</h1>
         <div class="list">
           <div class="svj-container">
@@ -340,7 +381,8 @@
         <div class="todo-list-container">
           <div class="todo-list">
             <div class="svj-todo-container">
-              <svg
+              <input type="checkbox" id="read a book" />
+              <!-- <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-square"
                 width="20"
@@ -356,8 +398,10 @@
                 <path
                   d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"
                 />
-              </svg>
-              <p class="p-main2">Read a book</p>
+              </svg> -->
+              <label for="read a book">
+                <p class="p-main2">Read a book</p>
+              </label>
             </div>
             <div class="time-container">
               <div class="p-time-container">
@@ -377,6 +421,7 @@
                   <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
                   <path d="M12 7v5l3 3" />
                 </svg>
+
                 <p class="p-time">8:00-9:00</p>
               </div>
               <div class="dot-svj-container">
@@ -402,7 +447,7 @@
           </div>
           <div class="todo-list">
             <div class="svj-todo-container">
-              <svg
+              <!-- <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-square"
                 width="20"
@@ -418,8 +463,11 @@
                 <path
                   d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"
                 />
-              </svg>
-              <p class="p-main2">Wireframing new product</p>
+              </svg> -->
+              <input type="checkbox" id="Wireframing" />
+              <label for="Wireframing">
+                <p class="p-main2">Wireframing new product</p>
+              </label>
             </div>
             <div class="time-container">
               <div class="p-time-container">
@@ -464,7 +512,7 @@
           </div>
           <div class="todo-list">
             <div class="svj-todo-container">
-              <svg
+              <!-- <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-square"
                 width="20"
@@ -480,8 +528,11 @@
                 <path
                   d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"
                 />
-              </svg>
-              <p class="p-main2">Moodboard Landing Page</p>
+              </svg> -->
+              <input type="checkbox" id="Moodboard" />
+              <label for="Moodboard">
+                <p class="p-main2">Moodboard Landing Page</p>
+              </label>
             </div>
             <div class="time-container">
               <div class="p-time-container">
@@ -526,7 +577,7 @@
           </div>
           <div class="todo-list">
             <div class="svj-todo-container">
-              <svg
+              <!-- <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-square"
                 width="20"
@@ -542,8 +593,11 @@
                 <path
                   d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"
                 />
-              </svg>
-              <p class="p-main2">Weekly Meeting</p>
+              </svg> -->
+              <input type="checkbox" id="Weekly" />
+              <label for="Weekly">
+                <p class="p-main2">Weekly Meeting</p>
+              </label>
             </div>
             <div class="time-container">
               <div class="p-time-container">
@@ -588,7 +642,7 @@
           </div>
           <div class="todo-list">
             <div class="svj-todo-container">
-              <svg
+              <!-- <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-square"
                 width="20"
@@ -604,8 +658,11 @@
                 <path
                   d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"
                 />
-              </svg>
-              <p class="p-main2">Design PPT For Sharing Session #2</p>
+              </svg> -->
+              <input type="checkbox" id="Design" />
+              <label for="Design">
+                <p class="p-main2">Design PPT For Sharing Session #2</p>
+              </label>
             </div>
             <div class="time-container">
               <div class="p-time-container">
@@ -650,7 +707,7 @@
           </div>
           <div class="todo-list">
             <div class="svj-todo-container">
-              <svg
+              <!-- <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-square"
                 width="20"
@@ -666,8 +723,11 @@
                 <path
                   d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"
                 />
-              </svg>
-              <p class="p-main2">Ngopi With Bojo</p>
+              </svg> -->
+              <input type="checkbox" id="Ngopi" />
+              <label for="Ngopi">
+                <p class="p-main2">Ngopi With Bojo</p>
+              </label>
             </div>
             <div class="time-container">
               <div class="p-time-container">
@@ -712,7 +772,7 @@
           </div>
           <div class="todo-list">
             <div class="svj-todo-container">
-              <svg
+              <!-- <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-square"
                 width="20"
@@ -728,8 +788,11 @@
                 <path
                   d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"
                 />
-              </svg>
-              <p class="p-main2">Watch Netflix-Vinland Saga</p>
+              </svg> -->
+              <input type="checkbox" id="Netflix-Vinland" />
+              <label for="Netflix-Vinland">
+                <p class="p-main2">Watch Netflix-Vinland Saga</p>
+              </label>
             </div>
             <div class="time-container">
               <div class="p-time-container">

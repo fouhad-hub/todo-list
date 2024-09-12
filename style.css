@@ -138,7 +138,7 @@ main {
 }
 .p-main2 {
   font-size: 1rem;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 .time-container {
   display: flex;
@@ -161,10 +161,66 @@ main {
   border-radius: 10px;
   margin-left: 10px;
 }
+#check-sidebar {
+  display: none;
+}
+#label-sidebar {
+  display: none;
+}
+
+/* .sidebar-toggle {
+  display: none;
+} */
 @media only screen and (max-width: 950px) {
+  /* .sidebar-toggle {
+    display: block;
+  } */
+  #label-sidebar {
+    display: block;
+  }
+  .sidebar {
+    position: fixed;
+    left: -300px;
+    height: 100%;
+    width: 250px;
+    overflow: scroll;
+    transition: all 0.5s ease;
+  }
+  #check-sidebar {
+    display: none;
+  }
+  #check-sidebar:checked ~ .sidebar {
+    left: 0;
+  }
+  label #btn,
+  label #cancel {
+    position: absolute;
+    cursor: pointer;
+  }
+  label #btn {
+    left: 0;
+    transition: all 0.5s;
+  }
+  #check-sidebar:checked ~ label #btn {
+    left: 25%;
+    opacity: 0;
+  }
+  label #cancel {
+    top: 5%;
+    left: -25%;
+    z-index: 1111;
+    transition: all 0.5s;
+  }
+  #check-sidebar:checked ~ label #cancel {
+    left: 25%;
+  }
+  main {
+    padding-top: 0;
+  }
+  .h1-main {
+    margin: 0;
+  }
   .list-container {
-    /* display: flex;
-    flex-direction: column; */
     grid-template-columns: 6fr;
   }
   .list {
@@ -174,7 +230,11 @@ main {
     width: 100%;
   }
   .grid {
-    height: 350px;
+    height: 120px;
+  }
+  .h1-aside {
+    /* text-align: center; */
+    font-size: 2.5em;
   }
 }
 
@@ -182,6 +242,10 @@ main {
   .grid {
     height: 200px;
   }
+}
+.h1-aside {
+  /* text-align: center; */
+  font-size: 2em;
 }
 .random {
   font-size: 16px;
