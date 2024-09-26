@@ -8,9 +8,11 @@ body {
   justify-content: center; */
 }
 .list-container {
-  display: grid;
-  grid-template-columns: 3fr 9fr;
+  /* display: grid;
+  grid-template-columns: 3fr 9fr; */
+  display: flex;
   gap: 50px;
+  padding: 10px;
   /* text-align: center; */
   /* display: flex; */
   /* justify-content: center; */
@@ -18,13 +20,19 @@ body {
 aside {
   background-color: white;
   padding: 30px 20px;
+  height: 100%;
   /* width: 250px; */
   border-radius: 10px;
+}
+.sidebar {
+  height: 100%;
+  flex-basis: 18%;
+  height: 100svh;
 }
 .list {
   display: flex;
   align-items: center;
-  width: 250px;
+  width: 100%;
   justify-content: space-between;
 }
 .list:hover {
@@ -49,28 +57,29 @@ aside {
 }
 .nummbers-aside {
   font-size: 0.8rem;
+  padding: 4px 8px;
+  background-color: rgb(242, 241, 241);
+  border-radius: 20px;
 }
 .grid-container-section {
   margin-bottom: 20px;
 }
 .grid-container {
-  width: 250px;
+  width: 100%;
   gap: 10px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* display: flex; */
-  /* flex-direction: row; */
-  /* gap: 20px; */
-  /* justify-content: space-between; */
-  /* width: 300px; */
 }
 .grid {
-  height: 120px;
+  height: 150px;
   /* width: 100px; */
   background-color: rgb(230, 228, 228);
   /* border: 1px solid gray; */
   border-radius: 10px;
 }
+/* div div.nummbers-aside:hover {
+  background-color: white;
+} */
 .h2-group {
   font-size: 0.8rem;
   margin-top: 10px;
@@ -86,10 +95,15 @@ aside {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 900px;
+  /* max-width: 900px; */
+  width: 100%;
 }
 main {
+  padding-right: 20px;
   padding-top: 30px;
+  flex-basis: 82%;
+  height: 100svh;
+  width: 100%;
 }
 /* .h1-main {
   font-size: 0.8rem;
@@ -131,7 +145,8 @@ main {
 .todo-list {
   display: flex;
   justify-content: space-between;
-  max-width: 900px;
+  /* max-width: 900px; */
+  width: 100%;
   background-color: white;
   border-radius: 10px;
   padding: 10px 10px;
@@ -201,7 +216,7 @@ main {
   display: none;
 } */
 @media only screen and (min-width: 1400px) {
-  .todo-list {
+  /* .todo-list {
     max-width: 1100px;
   }
   .list {
@@ -210,7 +225,7 @@ main {
   .grid-container {
     margin-left: 50px;
   }
-  /* .sidebar {
+  .sidebar {
     height: 100%;
   }
   main {
