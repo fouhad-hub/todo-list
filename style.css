@@ -6,15 +6,15 @@ body {
   width: 100svw;
   justify-content: center; */
 }
-.positioning-container {
-  /* display: flex;
+/* .positioning-container {
+  display: flex;
   align-items: center;
   justify-content: center;
-  width: 100svw; */
-  /* height: 100%; */
-  /* width: 100%; */
-  /* justify-content: flex-start; */
-}
+  width: 100svw;
+  height: 100%;
+  width: 100%;
+  justify-content: flex-start;
+} */
 
 .list-container {
   display: grid;
@@ -30,12 +30,18 @@ body {
 aside {
   background-color: white;
   padding: 30px 20px;
+  height: 100%;
   /* width: 250px; */
   /* display: flex;
   flex-direction: column;
   flex-grow: 30%; */
   height: 100svh;
   border-radius: 10px;
+}
+.sidebar {
+  height: 100%;
+  flex-basis: 18%;
+  height: 100svh;
 }
 .list {
   display: flex;
@@ -68,28 +74,29 @@ aside {
   border-radius: 20px;
   background-color: rgb(245, 245, 245);
   font-size: 0.8rem;
+  padding: 4px 8px;
+  background-color: rgb(242, 241, 241);
+  border-radius: 20px;
 }
 .grid-container-section {
   margin-bottom: 20px;
 }
 .grid-container {
-  width: 250px;
+  width: 100%;
   gap: 10px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* display: flex; */
-  /* flex-direction: row; */
-  /* gap: 20px; */
-  /* justify-content: space-between; */
-  /* width: 300px; */
 }
 .grid {
-  height: 120px;
+  height: 150px;
   /* width: 100px; */
   background-color: rgb(230, 228, 228);
   /* border: 1px solid gray; */
   border-radius: 10px;
 }
+/* div div.nummbers-aside:hover {
+  background-color: white;
+} */
 .h2-group {
   font-size: 0.8rem;
   margin-top: 10px;
@@ -227,6 +234,23 @@ main {
 /* .sidebar-toggle {
   display: none;
 } */
+@media only screen and (min-width: 1400px) {
+  /* .todo-list {
+    max-width: 1100px;
+  }
+  .list {
+    margin-left: 50px;
+  }
+  .grid-container {
+    margin-left: 50px;
+  }
+  .sidebar {
+    height: 100%;
+  }
+  main {
+    height: 100%;
+  } */
+}
 @media only screen and (max-width: 950px) {
   /* .sidebar-toggle {
     display: block;
